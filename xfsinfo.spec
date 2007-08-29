@@ -33,6 +33,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xfsinfo
-%{_mandir}/man1/xfsinfo.1x.bz2
+%{_mandir}/man1/xfsinfo.1x*
 
 
