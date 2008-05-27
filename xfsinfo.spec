@@ -1,6 +1,6 @@
 Name: xfsinfo
-Version: 1.0.1
-Release: %mkrel 5
+Version: 1.0.2
+Release: %mkrel 1
 Summary: X font server information utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -33,4 +33,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xfsinfo
-%{_mandir}/man1/xfsinfo.1x*
+%{_mandir}/man1/xfsinfo.1*
