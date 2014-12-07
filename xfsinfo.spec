@@ -1,6 +1,6 @@
 Name: xfsinfo
 Version: 1.0.3
-Release: 10
+Release: 11
 Summary: X font server information utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
