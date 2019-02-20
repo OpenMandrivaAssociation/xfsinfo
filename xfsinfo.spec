@@ -1,6 +1,6 @@
 Name: xfsinfo
-Version: 1.0.5
-Release: 6
+Version: 1.0.6
+Release: 1
 Summary: X font server information utility
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -15,19 +15,16 @@ Xfsinfo is an utility for displaying information about an X font server, such
 as the list of capabilities, catalogues, alternate servers and more.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
 
-%make
+%make_build
 
 %install
-rm -rf %{buildroot}
-%makeinstall_std
-
+%make_install
 
 %files
 %{_bindir}/xfsinfo
 %{_mandir}/man1/xfsinfo.1*
-
